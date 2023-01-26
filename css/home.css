@@ -1,14 +1,28 @@
-.container-content {
-	padding: 20px 30px;
+#container-home {
+	display: flex;
+	flex-direction: column;
 }
 
-.container-content section {
-	width: 100%;
+#container-home > section:nth-child(even) {
+	margin: 10% 0;
+}
+
+#container-home > section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #introduction {
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+}
+
+@media screen and (min-width: 1081px) {
+	#container-home {
+		padding: 40px;
+	}
+
+	#container-home > section {
+		justify-content: flex-start;
+	}
 }

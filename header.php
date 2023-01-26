@@ -22,6 +22,7 @@
 	</div>
 
 	<div class="user-options">
+		<button id="menu" class="css-icon-btn"><img src="img/bx-dots-horizontal-rounded.svg"></button>
 		<a href="" class="css-link-light">Entrar</a>
 		<a href="" class="css-link-light">Registrar</a>
 	</div>
