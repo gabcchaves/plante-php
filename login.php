@@ -2,6 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Entrar</title>
+		<link rel="stylesheet" href="css/global.css">
 		<link rel="styleshet" href="css/login.css">
 	</head>
 

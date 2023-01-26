@@ -2,6 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Boleto</title>
+		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/ticket.css">
 	</head>
 
