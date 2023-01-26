@@ -20,8 +20,14 @@
 				<input type="button" value="Palmeiras">
 			</div>
 
+			<div class="container-filter-menu">
+				<button id="btn-filter-menu"><img class="css-icon-dark" src="img/bx-filter-alt.svg"
+	alt="Filtrar."></button>
+			</div>
+
 			<div id="container-results">
 				<?php //TODO ?>
+				Something to hold place here.
 			</div>
 		</div>
 
