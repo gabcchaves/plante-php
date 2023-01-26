@@ -14,11 +14,9 @@
 /* Redefinições */
 * {
 	transition: 0.2s;
+	margin: 0;
 }
-
-*:hover {
-	outline: none;
-}
+*:focus { outline: none; }
 
 body {
 	margin: 0;
@@ -31,213 +29,146 @@ body {
 	min-height: 100vh;
 }
 
+button, input {
+	border-radius: 4px !important;
+}
 button, input[type=submit] {
 	all: unset;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
-
-input {
-	all: unset;
-}
-
-button, input {
-	border-radius: 3px !important;
-}
-
+input { all: unset; }
 input:not(input[type=submit]) {
 	background-color: var(--old-wood);
-	padding-left: 3%;
 	border: 1px solid var(--napier-green);
+	padding: 0 10px;
 }
+input:not(input[type=submit]):focus { border: 1px solid var(--gold); }
 
-input:not(input[type=submit]):focus {
-	border: 1px solid var(--gold);
-}
+a { text-decoration: none; }
+a:hover { color: var(--kaitoke-green); }
 
-a {
-	text-decoration: none;
-	color: var(--napier-green);
-}
-
-a:hover {
-	color: var(--kaitoke-green);
-}
-
-.icon-light {
-	filter: invert(1);
-}
-
-.icon-dark {
+.css-icon-light { filter: invert(1); }
+.css-icon-dark {
 	filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(70%) contrast(119%);
 }
 
-.main-container {
-	flex: 1;
+.css-btn-light { background-color: var(--baby-powder); }
+.css-btn-light:hover {
+	background-color: white;
+	font-weight: medium;
+	text-shadow: 0 0 1px white;
+}
+.css-btn-dark {
+	background-color: var(--avocado-green);
+	color: var(--baby-powder);
+}
+.css-btn-dark:hover {
+	background-color: var(--kaitoke-green);
+	cursor: pointer;
 }
 
-.button-dark {
-	background-color: var(--avocado-green) !important;
-	color: var(--baby-powder) !important;
-	display: flex !important;
-	justify-content: center !important;
-	align-items: center !important;
-	text-align: center !important;
+.css-link-light { color: var(--baby-powder); }
+.css-link-light:hover {
+	color: white;
+	font-weight: medium;
+	text-shadow: 0 0 1px white;
 }
 
-.button-dark:hover {
-	background-color: var(--kaitoke-green) !important;
-	cursor: pointer !important;
-}
+.container-content { flex: 1; }
 
 /* Cabeçalho geral. */
 #main-header {
 	background-color: var(--avocado-green);
 	color: var(--baby-powder);
+	height: 10vh;
 	display: flex;
 	align-items: center;
-	height: 10vh;
-	padding: 0 5%;
-	position: sticky;
-	top: 0;
+	padding: 0 10px;
 }
 
-#main-header * {
-	color: var(--baby-powder);
+#main-header > div {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+#main-header > div > a:nth-child(even) {
+	margin: 5px;
 }
 
-#main-header .main-options {
-	display: none;
-}
-
-#main-header .user-options {
-	display: none;
-}
+#main-header .dropdown-content { display: none; }
 
 #main-header .logo-area {
 	flex: 1;
-	display: flex;
 	justify-content: center;
-	align-items: center;
+	font-size: 1.2rem;
+	position: relative;
 }
-
-#main-header .logo-area img {
-	filter: invert(1);
-}
-
-#main-header .search-area {
-	justify-content: flex-end;
+#main-header .logo-area img { filter: invert(1); }
+#main-header .logo-area > a {
+	position: absolute;
+	width: 100%;
 	height: 100%;
-	display: flex;
-	align-items: center;
-	width: 10%;
 }
+
+#main-header .main-options { display: none; }
+#main-header .user-options { display: none; }
 
 #main-header .search-area form {
-	position: relative;
-	height: 70%;
-	width: 80%;
-}
-
-#main-header .search-area form input[type=text] {
-	height: 100%;
-	width: 100%;
-	padding-left: 3%;
-	color: var(--graphite-gray);
-	display: none;
-}
-
-#main-header .search-area form button {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+#main-header .search-area input { display: none; }
+#main-header .search-area button {
 	position: absolute;
 	right: 0;
-	top: 0;
-	bottom: 0;
+}
+.css-icon-light:hover {
+		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(108%) contrast(119%) drop-shadow(0 0 1px #009900);
 }
 
-#main-header .search-area form button img {
-	filter: invert(1);
-}
+#main-header .css-icon-light { width: 2rem; }
 
-#main-header .dropdown-menu {
-	width: 10%;
-}
-
-#main-header .dropdown-content {
-	display: none;
-}
-
-#btn-menu img {
-	filter: invert(1);
-}
-
-#btn-menu img:hover,
-#main-header .search-area form button img:hover {
-	filter: invert(1) drop-shadow(0 0 2px #fefef4);
-}
-
-#main-header .logo-area:hover {
-	text-shadow: 0 0 2px #fefef4;
-}
-
-/* Telas maiores */
 @media screen and (min-width: 1081px) {
 	#main-header .dropdown-menu {
 		display: none;
 	}
 
-	#main-header {
-		padding: 0 2%;
-		height: 70px;
-	}
+	#main-header > div { padding: 0 10px; }
 
 	#main-header .logo-area {
 		justify-content: flex-start;
-		font-size: 1.4rem;
-		width: 5%;
 	}
 
 	#main-header .main-options {
 		display: flex;
-		width: 35%;
+		justify-content: flex-end;
 	}
 
-	#main-header .search-area {
-		width: 40%;
+	#main-header .search-area .search-form {
+		height: 100%;
+		background-color: gold;
 	}
-
-	#main-header .search-area form {
+	#main-header .search-area input {
+		display: flex;
+		height: 40px;
+		color: var(--graphite-gray);
 	}
-
-	#main-header .search-area form input[type=text] {
-		display: block;
+	#main-header .search-area button {
+		height: 40px;
 	}
-
-	#main-header .search-area form button img {
+	#main-header .search-area button img {
 		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(70%) contrast(119%);
 	}
-
-	#main-header .search-area form button img:hover {
-		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%) drop-shadow(0 0 1px #003000);
+	#main-header .search-area button img:hover {
+		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(108%) contrast(119%) drop-shadow(0 0 1px #009900);
 	}
 
 	#main-header .user-options {
 		display: flex;
-		width: 15%;
-		justify-content: flex-end;
-	}
-
-	#main-header .user-options > *:nth-child(even),
-	#main-header .main-options > *:nth-child(even) {
-		margin: 0 10px;
-	}
-
-	#main-header .user-options > *:hover,
-	#main-header .main-options > *:hover {
-		text-shadow: 0 0 2px var(--baby-powder);
 	}
 }
 
@@ -248,10 +179,12 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	padding: 2% 0;
 	flex: 0;
+	align-items: center;
+	padding: 10px 0;
 }
+
+#main-footer img { filter: invert(1); }
 
 #main-footer > div,
 #main-footer > p {
@@ -259,3 +192,4 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 }
+#main-footer .logo-area { font-size: 1.2rem; }
