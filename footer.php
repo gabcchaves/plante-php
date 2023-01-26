@@ -1,9 +1,9 @@
 <?php
 ?>
 
-<footer>
+<footer id="main-footer">
 	<div class="logo-area">
-		<img src="" alt="Logo">
+		<img src="img/bx-leaf.svg" alt="Logo">
 		<strong>Plantê</strong>
 	</div>
 	<div class="contact-info">
