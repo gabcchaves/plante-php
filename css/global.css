@@ -63,12 +63,12 @@ a:hover { color: var(--kaitoke-green); }
 	text-shadow: 0 0 1px white;
 }
 .css-btn-dark {
-	background-color: var(--avocado-green);
-	color: var(--baby-powder);
+	background-color: var(--avocado-green) !important;
+	color: var(--baby-powder) !important;
 }
 .css-btn-dark:hover {
-	background-color: var(--kaitoke-green);
-	cursor: pointer;
+	background-color: var(--kaitoke-green) !important;
+	cursor: pointer !important;
 }
 
 .css-link-light { color: var(--baby-powder); }
@@ -76,6 +76,14 @@ a:hover { color: var(--kaitoke-green); }
 	color: white;
 	font-weight: medium;
 	text-shadow: 0 0 1px white;
+}
+.css-link-dark {
+	color: var(--avocado-green);
+}
+.css-link-dark {
+	color: var(--napier-green);
+	font-weight: medium;
+	text-shadow: 0 0 1px var(--napier-green);
 }
 
 .container-content { flex: 1; }
