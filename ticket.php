@@ -9,11 +9,13 @@
 	<body>
 		<?php include "header.php"; ?>
 
-		<h3>Seu boleto</h3>
-		<hr>
-		<p>Seu boleto de pagamento foi gerado. Vencimento em até 1 dia útil. A
-data de entrega é computada a partir do processamento do boleto.</p>
-		<button id="btn-print-ticket">Imprimir Boleto</button>
+		<div class="container-content">
+			<h3>Seu boleto</h3>
+			<hr>
+			<p>Seu boleto de pagamento foi gerado. Vencimento em até 1 dia útil. A
+	data de entrega é computada a partir do processamento do boleto.</p>
+			<button id="btn-print-ticket">Imprimir Boleto</button>
+		</div>
 
 		<?php include "footer.php"; ?>
 	</body>

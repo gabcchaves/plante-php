@@ -12,15 +12,17 @@
 	<body>
 		<?php include "header.php"; ?>
 
-		<div class="sidebar">
-			<h3>Ornamentais</h3>
-			<input type="button" value="Cactus">
-			<input type="button" value="Rosas do deserto">
-			<input type="button" value="Palmeiras">
-		</div>
+		<div class="container-content">
+			<div class="sidebar">
+				<h3>Ornamentais</h3>
+				<input type="button" value="Cactus">
+				<input type="button" value="Rosas do deserto">
+				<input type="button" value="Palmeiras">
+			</div>
 
-		<div id="container-results">
-			<?php //TODO ?>
+			<div id="container-results">
+				<?php //TODO ?>
+			</div>
 		</div>
 
 		<?php include "footer.php"; ?>

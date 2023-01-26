@@ -9,10 +9,12 @@
 	<body>
 		<?php include "header.php"; ?>
 
-		<h3>Chave PIX</h3>
-		<hr>
-		<p>Esta chave é válida por 30 minutos.</p>
-		<p id="pixkey"></p>
+		<div class="container-content">
+			<h3>Chave PIX</h3>
+			<hr>
+			<p>Esta chave é válida por 30 minutos.</p>
+			<p id="pixkey"></p>
+		</div>
 
 		<?php include "footer.php"; ?>
 	</body>

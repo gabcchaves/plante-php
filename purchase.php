@@ -9,24 +9,26 @@
 	<body>
 		<?php include "header.php"; ?>
 
-		<form>
-			<h3>Local de entrega</h3>
-			<hr>
-			<input type="text" placeholder="Cidade">
-			<input type="text" placeholder="Estado">
-			<input type="text" placeholder="Bairro">
-			<input type="text" placeholder="Rua">
-			<input type="number" placeholder="Nº">
+		<div class="container-content">
+			<form>
+				<h3>Local de entrega</h3>
+				<hr>
+				<input type="text" placeholder="Cidade">
+				<input type="text" placeholder="Estado">
+				<input type="text" placeholder="Bairro">
+				<input type="text" placeholder="Rua">
+				<input type="number" placeholder="Nº">
 
-			<h3>Pagamento</h3>
-			<hr>
-			<label for="ticket">Boleto</label>
-			<input id="ticket" type="radio">
-			<label for="pix">Pix</label>
-			<input id="pix" type="radio">
-	
-			<input type="submit" value="Confirmar">
-		</form>
+				<h3>Pagamento</h3>
+				<hr>
+				<label for="ticket">Boleto</label>
+				<input id="ticket" type="radio">
+				<label for="pix">Pix</label>
+				<input id="pix" type="radio">
+		
+				<input type="submit" value="Confirmar">
+			</form>
+		</div>
 
 		<?php include "footer.php"; ?>
 	</body>

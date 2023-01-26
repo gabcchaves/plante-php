@@ -9,14 +9,16 @@
 	<body>
 		<?php include "header.php"; ?>
 
-		<h1>Entrar</h1>
-		<hr>
-		<form action="modules/login.php" method="POST">
-			<input name="email" type="email" placeholder="Endereço de e-mail">
-			<input name="password" type="password" placeholder="Senha">
-			<input type="submit" value="Entrar">
-		</form>
-		<small><a href="">Não tem conta?</a></small>
+		<div class="container-content">
+			<h1>Entrar</h1>
+			<hr>
+			<form action="modules/login.php" method="POST">
+				<input name="email" type="email" placeholder="Endereço de e-mail">
+				<input name="password" type="password" placeholder="Senha">
+				<input type="submit" value="Entrar">
+			</form>
+			<small><a href="">Não tem conta?</a></small>
+		</div>
 
 		<?php include "footer.php" ?>
 	</body>

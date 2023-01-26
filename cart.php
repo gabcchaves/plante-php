@@ -9,10 +9,12 @@
 	<body>
 		<?php include "header.php"; ?>
 
-		<h3>Carrinho</h3>
-		<button id="btn-pay">Pagar</button>
-		<hr>
-		<?php // TODO ?>
+		<div class="container-content">
+			<h3>Carrinho</h3>
+			<button id="btn-pay">Pagar</button>
+			<hr>
+			<?php // TODO ?>
+		</div>
 
 		<?php include "footer.php"; ?>
 	</body>

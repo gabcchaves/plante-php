@@ -9,16 +9,18 @@
 	<body>
 		<?php include "header.php"; ?>
 
-		<div class="sidebar">
-			<h3>Configurações</h3>
-			<input type="button" value="Nome">
-			<input type="button" value="Endereço de e-mail">
-			<input type="button" value="Senha">
-			<input type="button" value="Telefone">
-		</div>
+		<div class="container-content">
+			<div class="sidebar">
+				<h3>Configurações</h3>
+				<input type="button" value="Nome">
+				<input type="button" value="Endereço de e-mail">
+				<input type="button" value="Senha">
+				<input type="button" value="Telefone">
+			</div>
 
-		<div id="container-setting">
-			<?php //TODO ?>
+			<div id="container-setting">
+				<?php //TODO ?>
+			</div>
 		</div>
 
 		<?php include "footer.php"; ?>
