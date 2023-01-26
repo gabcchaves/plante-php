@@ -10,17 +10,17 @@
 		<?php include "header.php"; ?>
 
 		<div class="container-content">
-			<h1>Cadastrar-se</h1>
+			<h3>Cadastrar-se</h3>
 			<hr>
-			<form action="modules/register.php" method="POST">
+			<form class="form-register" action="modules/register.php" method="POST">
 				<input name="name" type="text" placeholder="Nome completo">
 				<input name="email" type="email" placeholder="Endereço de e-mail">
 				<input name="password" type="password" placeholder="Senha">
 				<input type="password" placeholder="Confirmar senha">
 				<input name="phone" type="tel" placeholder="Telefone">
-				<input type="submit" value="Confirmar">
+				<input class="css-btn-dark" type="submit" value="Confirmar">
 			</form>
-			<small><a href="">Já tem conta?</a></small>
+			<small><a class="css-link-dark" href="">Já tem conta?</a></small>
 		</div>
 
 		<?php include "footer.php"; ?>
