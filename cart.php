@@ -11,7 +11,7 @@
 
 		<div class="container-content">
 			<h3>Carrinho</h3>
-			<button id="btn-pay">Pagar</button>
+			<button id="btn-pay" class="css-btn-dark">Pagar</button>
 			<hr>
 			<?php // TODO ?>
 		</div>

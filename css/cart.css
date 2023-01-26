@@ -1,0 +1,23 @@
+.container-content {
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 15% 1% auto;
+	padding: 20px 30px;
+	align-items: center;
+}
+
+.container-content button { padding: 10px 20px; }
+
+hr {
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1081px) {
+	.container-content { padding: 50px 100px; }
+	.container-content { padding: 10px, 10px; }
+}
