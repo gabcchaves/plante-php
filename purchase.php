@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
@@ -10,14 +11,14 @@
 		<?php include "header.php"; ?>
 
 		<div class="container-content">
-			<form>
+			<form action="modules/purchase.php" method="POST">
 				<h3>Local de entrega</h3>
 				<hr>
-				<input type="text" placeholder="Cidade">
-				<input type="text" placeholder="Estado">
-				<input type="text" placeholder="Bairro">
-				<input type="text" placeholder="Rua">
-				<input type="number" placeholder="Nº">
+				<input name="city" type="text" placeholder="Cidade">
+				<input name="state" type="text" placeholder="Estado">
+				<input name="district" type="text" placeholder="Bairro">
+				<input name="street" type="text" placeholder="Rua">
+				<input name="number" type="number" placeholder="Nº">
 
 				<h3>Pagamento</h3>
 				<hr>
