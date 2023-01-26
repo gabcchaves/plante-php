@@ -1,0 +1,14 @@
+.container-content {
+	padding: 20px 30px;
+}
+
+.container-content section {
+	width: 100%;
+}
+
+#introduction {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
