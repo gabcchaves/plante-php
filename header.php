@@ -1,26 +1,28 @@
 <?php
 ?>
 
-<header>
+<header id="main-header">
 	<div class="logo-area">
-		<img src="" alt="Logo">
+		<img src="img/bx-leaf.svg" alt="Logo">
 		<strong>Plantê</strong>
 	</div>
 
 	<div class="options">
-		<a href="">Explorar</a>
-		<a href="">Carrinho</a>
+		<a href="" class="css-link-light">Explorar</a>
+		<a href="" class="css-link-light">Carrinho</a>
 	</div>
 
 	<div class="search-area">
 		<form action="" method="POST">
 			<input type="text" placeholder="Pesquisar">
-			<input type="submit" value="Pesquisar">
+			<button id="btn-search" type="submit">
+				<img src="img/bx-search.svg" alt="Pesquisar">
+			</button>
 		</form>
 	</div>
 
 	<div class="user-options">
-		<a href="">Entrar</a>
-		<a href="">Registrar</a>
+		<a href="" class="css-link-light">Entrar</a>
+		<a href="" class="css-link-light">Registrar</a>
 	</div>
 </header>
