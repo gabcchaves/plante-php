@@ -41,6 +41,8 @@ input:not(input[type=button]):not(input[type=submit]) {
 	background-color: var(--beige);
 }
 
+hr { background-color: var(--napier-green); }
+
 .css-link-light { color: var(--baby-powder); }
 .css-link-light:hover {
 	color: white;
