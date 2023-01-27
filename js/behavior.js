@@ -71,3 +71,8 @@ function isNumberKey(e) {
 		return false;
 	return true;
 }
+
+function validateRegisterForm() {
+	let f1 = $(".form-register input[type=password]");
+	return f1[0].value == f1[1].value;
+}
