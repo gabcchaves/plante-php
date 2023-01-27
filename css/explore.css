@@ -36,10 +36,10 @@
 }
 
 #container-results {
-	padding: 0 20px;
+	display: grid;
+	grid-template-columns: auto auto;
+	align-items: center;
 }
-
-#container-results
 
 /* Cartão de planta. */
 .card-plant {
