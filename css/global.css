@@ -107,9 +107,14 @@ a:hover { color: var(--kaitoke-green); }
 	margin: 5px;
 }
 
+#main-header .dropdown-menu {
+	display: flex;
+	position: relative;
+}
 #main-header .dropdown-content { display: none; }
 
 #main-header .logo-area {
+	display: none;
 	flex: 1;
 	justify-content: center;
 	font-size: 1.2rem;
@@ -125,15 +130,27 @@ a:hover { color: var(--kaitoke-green); }
 #main-header .main-options { display: none; }
 #main-header .user-options { display: none; }
 
+#main-header .search-area {
+	flex: 1;
+	justify-content: flex-end;
+}
 #main-header .search-area form {
 	display: flex;
 	align-items: center;
 	position: relative;
+	width: 95%;
 }
-#main-header .search-area input { display: none; }
+#main-header .search-area input {
+	width: 100%;
+	padding: 10px 15px;
+	color: var(--graphite-gray);
+}
 #main-header .search-area button {
 	position: absolute;
-	right: 0;
+	right: 10px;
+}
+#main-header .search-area button img {
+		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(80%) contrast(119%);
 }
 .css-icon-light:hover {
 		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(108%) contrast(119%) drop-shadow(0 0 1px #009900);
@@ -149,6 +166,7 @@ a:hover { color: var(--kaitoke-green); }
 	#main-header > div { padding: 0 10px; }
 
 	#main-header .logo-area {
+		display: flex;
 		justify-content: flex-start;
 	}
 
@@ -164,12 +182,14 @@ a:hover { color: var(--kaitoke-green); }
 	#main-header .search-area input {
 		display: flex;
 		height: 40px;
-		width: 400px;
+		width: 100%;
+		padding: 0;
+		padding-left: 15px;
 		color: var(--graphite-gray);
 	}
 	#main-header .search-area button {
 		height: 40px;
-		padding-right: 5px;
+		padding-right: 0px;
 	}
 	#main-header .search-area button img {
 		filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(70%) contrast(119%);

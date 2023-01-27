@@ -3,7 +3,7 @@
 
 <header id="main-header">
 	<div class="dropdown-menu">
-		<button id="btn-menu">
+		<button id="btn-menu" onclick="toggleMenu();">
 			<img class="css-icon-light" src="img/bx-dots-horizontal-rounded.svg" alt="Menu"/>
 		</button>
 		<div class="dropdown-content">
@@ -24,9 +24,9 @@
 	</div>
 
 	<div class="search-area">
-		<form id="search-form">
+		<form id="form-search">
 			<input name="search-pattern" id="search-field" type="text" placeholder="Pesquisar"/>
-			<button type="submit">
+			<button type="submit" onclick="">
 				<img class="css-icon-light" src="img/bx-search.svg" alt="Pesquisar"/>
 			</button>
 		</form>
@@ -37,3 +37,5 @@
 		<a class="css-link-light" href="register.php">Cadastrar-se</a>
 	</div>
 </header>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/behavior.js"></script>
