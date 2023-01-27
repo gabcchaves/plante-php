@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION["is_logged"])) {
+	echo "<h1>Para cadastrar outro usuário, encerre a sessão.</h1>";
+	header("refresh:2;url=index.php");
+	exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>

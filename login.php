@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (isset($_SESSION["is_logged"])) {
+	echo "<h1>Usuário já está ativo.</h1>";
+	header("refresh:2;url=index.php");
+	exit();
+}
+?>
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
