@@ -27,8 +27,7 @@
 			</div>
 
 			<div id="container-results">
-				<?php //TODO ?>
-				Something to hold place here.
+				<?php include "modules/randomplants.php"; ?>
 			</div>
 		</div>
 
