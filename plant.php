@@ -26,7 +26,7 @@ if (isset($_GET["id"])) {
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title><?php $name ?></title>
+		<title><?= $name ?></title>
 		<link rel="stylesheet" href="css/global.css">
 		<link rel="stylesheet" href="css/plant.css">
 	</head>
