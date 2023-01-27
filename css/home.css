@@ -43,8 +43,6 @@
 	flex-direction: column;
 	text-align: center;
 	position: relative;
-}
-.card-plant:nth-child(even) {
 	margin: 5px;
 }
 .card-plant:hover {

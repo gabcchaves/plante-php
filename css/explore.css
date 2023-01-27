@@ -53,9 +53,7 @@
 	flex-direction: column;
 	text-align: center;
 	position: relative;
-}
-.card-plant:nth-child(even) {
-	margin: 0 5px;
+	margin: 5px;
 }
 .card-plant:hover {
 	background-color: #EEFEEE !important;
