@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
@@ -17,8 +18,8 @@
 				<input name="email" type="email" placeholder="Endereço de e-mail" required>
 				<input name="password" type="password" placeholder="Senha" required>
 				<input type="password" placeholder="Confirmar senha" required>
-				<input name="phone" type="tel" placeholder="Telefone" onkeypress="isNumberKey(event)" required>
-				<input class="css-btn-dark" type="submit" value="Confirmar">
+				<input name="phone" type="tel" placeholder="Telefone" onkeypress="return isNumberKey(event)" required>
+				<input class="css-btn-dark" type="submit" value="Confirmar" onclick="return validateRegisterForm();">
 			</form>
 			<small><a class="css-link-dark" href="">Já tem conta?</a></small>
 		</div>
