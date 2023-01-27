@@ -17,7 +17,7 @@
 				<input name="email" type="email" placeholder="Endereço de e-mail">
 				<input name="password" type="password" placeholder="Senha">
 				<input type="password" placeholder="Confirmar senha">
-				<input name="phone" type="tel" placeholder="Telefone">
+				<input name="phone" type="tel" placeholder="Telefone" onkeypress="isNumberKey(event)">
 				<input class="css-btn-dark" type="submit" value="Confirmar">
 			</form>
 			<small><a class="css-link-dark" href="">Já tem conta?</a></small>

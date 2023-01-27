@@ -44,7 +44,7 @@ if (isset($_GET["id"])) {
 				<p>Quantidade em estoque: <strong><?= $quantity ?></strong></p>
 				<p>Preço: <strong><?= $price ?></strong</p>
 				<form action="purchase.php" method="POST">
-					<input type="number" placeholder="Qtd.">
+					<input type="number" placeholder="Qtd." onkeypress="return isNumberKey(event)">
 					<input class="css-btn-dark" type="submit" value="Adicionar ao carrinho">
 				</form>
 			</div>
