@@ -20,6 +20,7 @@ function toggleMenu() {
 			"top": "101%",
 			"background-color": "var(--avocado-green)",
 			"color": "var(--graphite-gray)",
+			"z-index": "3",
 			"border": "1px solid var(--gold)"
 		});
 
