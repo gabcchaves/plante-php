@@ -20,7 +20,8 @@
 			</section>
 
 			<section id="random-plants">
-				<?php //TODO ?>
+				<h3>Sugestões de plantas</h3>
+				<?php include "modules/randomplants.php"; ?>
 			</section>
 		</div>
 

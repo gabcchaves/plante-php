@@ -18,8 +18,63 @@
 	flex-direction: column;
 }
 
+/* Plantas aleatórias. */
+#random-plants {
+	display: grid;
+	grid-template-rows: 10% auto;
+	grid-template-columns: auto auto;
+	justify-content: center;
+}
+#random-plants > h3 {
+	grid-row: 1;
+	grid-column: 1 / 3;
+	text-align: center;
+}
+
+/* Cartão de planta. */
+.card-plant {
+	width: 200px;
+	height: 300px;
+	background-color: var(--platinum);
+	border: 1px solid var(--graphite-gray);
+	border-radius: 5px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.card-plant:nth-child(even) {
+	margin: 5px;
+}
+.card-plant:hover {
+	background-color: #EEFEEE;
+	cursor: pointer;
+}
+.card-plant img {
+	width: 100%;
+	height: 50%;
+}
+.card-plant > strong {
+	margin: 5%;
+}
+.card-plant > p {
+	flex: 1;
+}
+
+
 @media screen and (min-width: 1081px) {
 	.container-content > section {
 		justify-content: flex-start;
+	}
+
+	#random-plants {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+	}
+
+	#random-plants > h3 {
+		grid-row: 1;
+		grid-column: 1 / 5;
+		margin-bottom: 20px;
 	}
 }
