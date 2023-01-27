@@ -27,7 +27,7 @@
 	<div class="search-area">
 		<form id="form-search">
 			<input name="search-pattern" id="search-field" type="text" placeholder="Pesquisar"/>
-			<button type="submit" onclick="">
+			<button id="btn-search" type="submit" onclick="">
 				<img class="css-icon-light" src="img/bx-search.svg" alt="Pesquisar"/>
 			</button>
 		</form>
@@ -52,3 +52,4 @@
 </header>
 <script src="js/jquery-3.6.3.min.js"></script>
 <script src="js/behavior.js"></script>
+<script src="js/ajax.js"></script>

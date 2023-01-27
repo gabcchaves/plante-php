@@ -23,4 +23,14 @@ $(document).ready(function() {
 			$("#container-results").html(response);
 		});
 	});
+
+	$("#main-header #btn-search").click(function () {
+		let val = $("#search-field").val();
+		if (val != '') {
+			$.post("modules/searchresults.php", 'category=palmeira', (response) => {
+				console.log("hi");
+				$("#container-results").html(response);
+			});
+		}
+	});
 });
