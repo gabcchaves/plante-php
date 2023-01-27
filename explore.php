@@ -1,6 +1,7 @@
 <?php
 ?>
 
+<!DOCTYPE html>
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
@@ -9,15 +10,15 @@
 		<link rel="stylesheet" href="css/explore.css">
 	</head>
 
-	<body>
+	<body id="page-explore">
 		<?php include "header.php"; ?>
 
 		<div class="container-content">
 			<div class="sidebar">
 				<h3>Ornamentais</h3>
-				<input type="button" value="Cactus">
-				<input type="button" value="Rosas do deserto">
-				<input type="button" value="Palmeiras">
+				<input id="btn-set-plant-category-flowers" type="button" value="Flores">
+				<input id="btn-set-plant-category-cacti" type="button" value="Cactos">
+				<input id="btn-set-plant-category-palmtrees" type="button" value="Palmeiras">
 			</div>
 
 			<div class="container-filter-menu">
