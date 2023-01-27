@@ -13,11 +13,11 @@
 			<h3>Cadastrar-se</h3>
 			<hr>
 			<form class="form-register" action="modules/register.php" method="POST">
-				<input name="name" type="text" placeholder="Nome completo">
-				<input name="email" type="email" placeholder="Endereço de e-mail">
-				<input name="password" type="password" placeholder="Senha">
-				<input type="password" placeholder="Confirmar senha">
-				<input name="phone" type="tel" placeholder="Telefone" onkeypress="isNumberKey(event)">
+				<input name="name" type="text" placeholder="Nome completo" required>
+				<input name="email" type="email" placeholder="Endereço de e-mail" required>
+				<input name="password" type="password" placeholder="Senha" required>
+				<input type="password" placeholder="Confirmar senha" required>
+				<input name="phone" type="tel" placeholder="Telefone" onkeypress="isNumberKey(event)" required>
 				<input class="css-btn-dark" type="submit" value="Confirmar">
 			</form>
 			<small><a class="css-link-dark" href="">Já tem conta?</a></small>

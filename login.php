@@ -13,8 +13,8 @@
 			<h3>Entrar</h3>
 			<hr>
 			<form class="form-login" action="modules/login.php" method="POST">
-				<input name="email" type="email" placeholder="Endereço de e-mail">
-				<input name="password" type="password" placeholder="Senha">
+				<input name="email" type="email" placeholder="Endereço de e-mail" required>
+				<input name="password" type="password" placeholder="Senha" required>
 				<input class="css-btn-dark" type="submit" value="Entrar">
 			</form>
 			<small><a class="css-link-dark" href="register.php">Não tem conta?</a></small>
