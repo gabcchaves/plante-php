@@ -16,6 +16,7 @@ if (!$name || !$email || !$password || !$phone) {
 
 include "connect.php";
 
+$password = hash("sha256", $password);
 $sql = "INSERT INTO users (name, email, password, phone)
 	VALUES ('{$name}', '{$email}', '{$password}', {$phone})";
 
