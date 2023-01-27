@@ -1,4 +1,5 @@
 <?php
+	session_start();
 ?>
 
 <header id="main-header">
@@ -32,10 +33,22 @@
 		</form>
 	</div>
 
-	<div class="user-options">
-		<a class="css-link-light" href="login.php">Entrar</a>
-		<a class="css-link-light" href="register.php">Cadastrar-se</a>
-	</div>
+	<?php if (isset($_SESSION["is_logged"])): ?>
+		<div class="dropdown-user-menu">
+			<button id="btn-menu" onclick="toggleUserMenu();">
+				<img class="css-icon-light" src="img/bx-user-circle.svg" alt="Usuário."/>
+			</button>
+			<div class="dropdown-content">
+				<a class="css-link-light" href="settings.php">Configurações</a>
+				<a class="css-link-light" href="logout.php">Sair</a>
+			</div>
+		</div>
+	<?php else: ?>
+		<div class="user-options">
+			<a class="css-link-light" href="login.php">Entrar</a>
+			<a class="css-link-light" href="register.php">Cadastrar-se</a>
+		</div>
+	<?php endif; ?>
 </header>
 <script src="js/jquery-3.6.3.min.js"></script>
 <script src="js/behavior.js"></script>
