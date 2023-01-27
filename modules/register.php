@@ -25,7 +25,7 @@ if ($connection->query($sql) === TRUE) {
 	$_SESSION["is_logged"] = true;
 	echo "<h1>Usuário cadastrado com sucesso.</h1>";
 	echo "<h2>Redirecionando para página inicial em 3 segundos.</h2>";
-	header("refresh:5;url=../index.php");
+	header("refresh:3;url=../index.php");
 	exit();
 } else {
 	echo "<h1>Falha ao cadastrar usuário.</h1>";
