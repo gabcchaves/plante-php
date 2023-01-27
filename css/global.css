@@ -158,6 +158,28 @@ a:hover { color: var(--kaitoke-green); }
 
 #main-header .css-icon-light { width: 2rem; }
 
+/* Rodapé geral. */
+#main-footer {
+	background-color: var(--avocado-green);
+	color: var(--baby-powder);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 0;
+	align-items: center;
+	padding: 10px 0;
+}
+
+#main-footer img { filter: invert(1); }
+
+#main-footer > div,
+#main-footer > p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#main-footer .logo-area { font-size: 1.2rem; }
+
 @media screen and (min-width: 1081px) {
 	#main-header .dropdown-menu {
 		display: none;
@@ -202,25 +224,3 @@ a:hover { color: var(--kaitoke-green); }
 		display: flex;
 	}
 }
-
-/* Rodapé geral. */
-#main-footer {
-	background-color: var(--avocado-green);
-	color: var(--baby-powder);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	flex: 0;
-	align-items: center;
-	padding: 10px 0;
-}
-
-#main-footer img { filter: invert(1); }
-
-#main-footer > div,
-#main-footer > p {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-#main-footer .logo-area { font-size: 1.2rem; }
