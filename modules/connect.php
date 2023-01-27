@@ -1,15 +1,14 @@
 <?php
-$server = "localhost";
-$username = "root";
-$password = "keyak4r!!";
-$database = "plantedb";
-$port = "3306";
 
-$connection = mysqli_connect($sever, $username, $password, $database, $port);
+$connection = new mysqli(
+	"localhost",
+	"root",
+	"keyak4r!!",
+	"plantedb"
+);
 
-if ($connection->connect_errno) {
+if ($connection->connect_error) {
 	echo "Falha ao conectar ao MariaDB: (" . $connection->connect_errno . ") ";
+	exit();
 }
-
-mysqli_set_charset($connection, "utf-8");
 ?>
