@@ -12,3 +12,7 @@ Sistema de venda de plantas ornamentais.
 - Pesquisa, filtragem e consulta de produtos
 - Carrinho de produtos
 - Compra de produtos
+
+## Detalhe da instalação
+#### Alterar credenciais de banco de dados no arquivo ***modules/connect.php***:
+![](doc/ss_connect_credentials.php)
